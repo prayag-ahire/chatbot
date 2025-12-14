@@ -1,0 +1,5 @@
+{
+  "name": "ProWorker AI Assistant",
+  "description": "A smart assistant for ProWorker gig workers to analyze performance, ratings, and orders using Supabase data and Gemini AI.",
+  "requestFramePermissions": []
+}
