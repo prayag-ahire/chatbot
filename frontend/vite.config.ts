@@ -6,12 +6,11 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', 'VITE_');
     return {
       server: {
-        port: 3000,
+        port: 5173,
         host: '0.0.0.0',
       },
       plugins: [react()],
       define: {
-        'VITE_GEMINI_API_KEY': JSON.stringify(env.VITE_GEMINI_API_KEY || ''),
         'VITE_SUPABASE_URL': JSON.stringify(env.VITE_SUPABASE_URL || ''),
         'VITE_SUPABASE_KEY': JSON.stringify(env.VITE_SUPABASE_KEY || ''),
         'VITE_API_URL': JSON.stringify(env.VITE_API_URL || 'http://localhost:3001'),
